@@ -1,0 +1,40 @@
+<br>
+ 
+<h2 class="brandname">Angular</h2>
+
+<br>
+<mat-checkbox input #big type="checkbox" name="size" (change)="0"><p id="canadaa">Going to ca</p></mat-checkbox>
+ 
+
+
+
+<tr *ngFor="let PS of PrintSerials">
+<ngx-barcode [bc-value]="PS.SerialId" [bc-display-value]="true">
+
+</ngx-barcode>
+</tr>
+ 
+     
+    <div id="lotarea">
+      <div class="lotnumber">
+         
+
+        <span *ngIf="big.checked">L</span> <span #dayOfTheYear></span>
+    
+      </div>
+      <span class="ddate">{{date | date: 'MMM d, y, HH:m:s'}}</span>
+        
+    
+        <div id="content">
+    
+          <ngx-barcode [bc-value]="3123123" [bc-display-value]="true"></ngx-barcode>
+       
+    
+      </div>
+    
+     
+      <br>
+      
+    
+    </div>
+    
